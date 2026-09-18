@@ -40,6 +40,7 @@
       .monogram { color:var(--glow,var(--accent)); font-size:1.15rem; font-weight:900; letter-spacing:-.09em; text-shadow:0 0 15px color-mix(in srgb,var(--glow,var(--accent)) 75%,transparent); }
       @keyframes sheen { from { transform:translateX(-72%) rotate(12deg); } to { transform:translateX(75%) rotate(12deg); } }
       .platform { border:1px solid currentColor; border-radius:99px; color:var(--accent); font-size:.69rem; font-weight:800; letter-spacing:.07em; padding:4px 8px; text-transform:uppercase; }
+      .coming-soon { align-self:flex-start; background:transparent; border:1px solid var(--accent); border-radius:999px; color:var(--accent); font-size:.76rem; font-weight:900; letter-spacing:.06em; margin-top:18px; padding:7px 11px; text-transform:uppercase; }
       .arrow { color:var(--cyan); font-size:1.45rem; line-height:1; } h3 { font-family:ui-serif,Georgia,"Times New Roman",serif; font-size:1.72rem; letter-spacing:-.035em; line-height:1; margin:24px 0 13px; }
       .description { color:var(--muted); font-size:.95rem; margin:0; } .visit { color:var(--accent); font-size:.82rem; font-weight:800; margin:auto 0 0; padding-top:22px; }
       /*
@@ -135,12 +136,15 @@
           <p class="count">11 public project repositories</p>
         </div>
         <div class="grid">
-          <a class="project" style="--glow:#6ab7ff; order:11" href="https://kadin-hunter.github.io/MacMote-Support/" target="_blank" rel="noopener noreferrer" aria-label="Read MacMote support and privacy information">
-            <div class="project-top"><div class="app-icon"><img src="assets/macmote-icon.png" alt="MacMote app icon" /></div><span class="arrow" aria-hidden="true">↗</span></div>
-            <h3>MacMote</h3>
-            <p class="description">A native Mac remote and widget for controlling a paired Apple TV bridge over your local network, with zero data collection.</p>
-            <p class="visit">View Project Page</p>
-          </a>
+          <article class="project" style="--glow:#6ab7ff; order:11">
+            <a class="card-main" href="https://kadin-hunter.github.io/MacMote-Support/" target="_blank" rel="noopener noreferrer" aria-label="Read MacMote support and privacy information">
+              <div class="project-top"><div class="app-icon"><img src="assets/macmote-icon.png" alt="MacMote app icon" /></div><span class="arrow" aria-hidden="true">↗</span></div>
+              <h3>MacMote</h3>
+              <p class="description">A native Mac remote and widget for controlling a paired Apple TV bridge over your local network, with zero data collection.</p>
+              <p class="visit">View Project Page</p>
+            </a>
+            <span class="coming-soon">Coming Soon!</span>
+          </article>
 
           <a class="project" style="--glow:#ffb04d; order:8" href="https://kadin-hunter.github.io/TimerSimple-iOS-Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Read the TimerVault portfolio case study">
             <div class="project-top"><div class="app-icon"><img src="assets/timervault-icon.png" alt="TimerVault app icon" /></div><span class="arrow" aria-hidden="true">↗</span></div>
